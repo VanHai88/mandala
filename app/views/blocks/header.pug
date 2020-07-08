@@ -3,20 +3,20 @@ include ../blocks/data_header
 .header
   .container
     .header__wrap
-      .header__logo
+      .header__wrap-logo
         a(href='#')
           img(src="./images/logo.png")
-      nav.header__nav
-        .header__nav-mobile
-          a#nav__toggle(href='#!')
+      nav.header__wrap-nav
+        .nav__mobile
+          a.nav__toggle(href='#')
             span
-        ul.header__nav-list
+        ul.nav__list
           each list in menus
             li.list__item
               if list.submenu
-                a.item__menu-products(href='#')= list.name
-                  i.fas.fa-chevron-down
-                .header__nav-dropdown
+                a.list__item-link(href='#')= list.name
+                  i.fas.fa-chevron-down.icon-down
+                .nav__dropdown
                   .arrow__up
                   .row
                     each sublist in list.submenu
@@ -24,10 +24,10 @@ include ../blocks/data_header
                         p.menu__title= sublist.title_name
                           ul.list__item-child
                             each item in sublist.submenu_item
-                              li
-                                a.item__menu-products(href=item.link)= item.name
+                              li.sub__child
+                                a.sub__child-item(href=item.link)= item.name
               else
-                a(href=list.link)= list.name
+                a.list__item-link(href=list.link)= list.name
 
       .header__icon
         button.header__icon-cart

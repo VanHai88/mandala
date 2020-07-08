@@ -18,12 +18,7 @@ $color-backgroud-mobile: #262626;
 $color-menu: #1a1a1a;
 $color-green: #789629;
 $color-menu-item: #737373;
-
-$font-7: 7px;
-$font-10: 10px;
-$font-12: 12px;
-$font-13: 13px;
-$font-14: 14px;
+$color-menu-sub: #818181;
 
 $box-shadow-1: 0 1rem 4rem rgba($color-black, 0.3);
 // Z-INDEXES
@@ -41,3 +36,10 @@ $z-index9: 900;
 // FONTS
 $font-primary: "Roboto", sans-serif;
 $Open-Sans: 'Open Sans', sans-serif;
+
+// SCREEN
+$iphone5: 320px;
+$iphone8-plus: 414px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
