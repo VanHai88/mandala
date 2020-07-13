@@ -1,0 +1,19 @@
+.banner {
+  &__wrapp {
+    position: relative;
+    min-height: 815px;
+    background-image: url(../../images/slide.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    a {
+        position: absolute;
+        bottom: 9%;
+        left: 23%;
+        color: $color-black;
+        font-family: $Open-Sans;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+  }
+}
