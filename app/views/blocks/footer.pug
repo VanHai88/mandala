@@ -6,26 +6,27 @@ include ../blocks/data_footer
       .col-xs-12.col-sm-12.col-md-12.col-lg-4
         .footer__block
           p.footer__block-title LIÊN HỆ VỚI CHÚNG TÔI
-          ul.footer__block-address
-            li
-              a(href="#")
-                img(src="/images/map.png" alt="fax")
-                span Tầng 4, Tòa nhà Hanoi Group  Số 442 Đội Cấn, P.Cống Vị, Q. Ba Đình, Hà Nội
-            li
-              a(href="#")
-                img(src="/images/phone.png" alt="fax")
-                span (04) 6674 2332 
-                span.space -
-              a(href="#")
+          ul.footer__list.footer__address
+            li.footer__address-item
+              .list__item-address 
+                img(src="/images/map.png" alt="map")
+              a(href="#").address__item-add Tầng 4, Tòa nhà Hanoi Group  Số 442 Đội Cấn, P.Cống Vị, Q. Ba Đình, Hà Nội
+            li.footer__address-item
+              div
+                img(src="/images/phone.png" alt="phone")
+              a(href="#") (04) 6674 2332 
+              span.space-line -
+              div
                 img(src="/images/fax.png" alt="fax")
-                span (04) 3786 8904
-            li
-              a(href="#")
-                img(src="/images/phone.png" alt="fax")
-                span (08) 6680 9686  
-              a(href="#").footer__link-email
-                img(src="/images/mail.png" alt="fax")
-                span Support@bizweb.vn
+              a(href="#")  (04) 3786 8904
+            li.footer__address-item
+                div
+                  img(src="/images/phone.png" alt="phone")
+                a(href="#") (08) 6680 9686  
+                span.space
+                div
+                  img(src="/images/mail.png" alt="email")
+                a(href="#").address__item-email Support@bizweb.vn
       each footer in footers
         if footer.last
           .col-xs-12.col-sm-12.col-md-12.col-lg-2

@@ -9,23 +9,16 @@
       color: $color-title-footer;
       white-space: nowrap;
     }
-    ul {
-      margin: 35px 0;
-      line-height: 30px;
-      li {
-        a {
-          color: $color-word-footer;
-          font-family: $font-primary;
-          font-size: $font-14;
-          text-decoration: none;
-          .space {
-            margin: 0 6px;
-          }
-          img {
-            margin-right: 11px;
-            @media only screen and (min-width: 992px) and (max-width: 1200px) {
-              margin-right: 8px;
-            }
+    .footer{
+      &__list {
+        margin: 20px 0 40px 0;
+        line-height: 30px;
+        li {
+          a {
+            color: $color-word-footer;
+            font-family: $font-primary;
+            font-size: $font-14;
+            text-decoration: none;
           }
           
         }
@@ -33,30 +26,55 @@
           color: $color-green !important;
           transition: all .3s;
         }
-        .footer__link-email {
-          margin-left: 15px;
+      }
+      &__last {
+        @media (max-width: $lg) {
+          border-bottom: none;
+          margin-bottom: 44px;
         }
       }
-    }
-    &-address {
-      font-weight: 500;
-    }
-    &-policy {
-      a:hover::before {
-        content: "\25AE";
-        position: absolute;
-        left: 6px;
-        font-family: FontAwesome;
-        font-size: $font-6;
+      &__address {
+        &-item {
+          display: flex;
+          font-weight: 600;
+          a {
+            margin-left: 5px;
+          }
+          .space-line {
+            font-size: 23px;
+            margin: 0px 5px;
+            line-height: 24px;
+          }
+          .space {
+            margin: 0 10px;
+          }
+          .address__item-email{
+            font-style: italic;
+          }
+          .address__item-add{
+            margin-left: 12px;
+          }
+        }
       }
-    }
-    @media only screen and (max-width: 992px) {
-      ul{
-        border-bottom: 1px solid $color-line-footer;
-        padding-bottom: 10px;
-      }
-      .footer__block-last{
-        border-bottom: none;
+      &__policy {
+        &-item {
+          position: relative;
+          a:hover::before {
+            content: "";
+            position: absolute;
+            top: 14px;
+            left: 0px;
+            width: 4px;
+            height: 4px;
+            background-color: #789629;
+          }
+          a:hover {
+            margin-left: 10px;
+            @media (min-width: $xl) {
+              white-space: nowrap;
+            }
+          }
+        }
       }
     }
   }
@@ -74,6 +92,7 @@
       text-align: end;
       @media only screen and (max-width: 768px) {
         text-align: start;
+        padding-top: 10px;
       }
     }
   }

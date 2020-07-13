@@ -166,7 +166,6 @@
               width: 700px;
               border: 2px solid $color-green;
               padding: 0 0px 26px 35px;
-              box-shadow: 0 3px 12px $color-backgroud-header;
               background-color: $color-white;
             }
             .arrow__up {
@@ -294,7 +293,6 @@
       }
       @media (max-width: $lg) {
         width: 100%;
-        padding-top: 10px;
         margin-left: 0px;
       }
     }
