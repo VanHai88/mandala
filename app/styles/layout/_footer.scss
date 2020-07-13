@@ -1,22 +1,22 @@
 .footer {
-  background-color: $color-black-footer;
   padding-top: 54px;
+  background-color: $color-black-footer;
   &__block {
     &-title {
       font-size: $font-18;
-      font-family: $Open-Sans;
+      font-family: $Open-Sans; 
       font-weight: 600;
       color: $color-title-footer;
-      width: max-content;
+      white-space: nowrap;
     }
     ul {
-      line-height: 30px;
       margin: 35px 0;
+      line-height: 30px;
       li {
         a {
+          color: $color-word-footer;
           font-family: $font-primary;
           font-size: $font-14;
-          color: $color-word-footer !important;
           text-decoration: none;
           .space {
             margin: 0 6px;
@@ -44,9 +44,9 @@
     &-policy {
       a:hover::before {
         content: "\25AE";
-        font-family: FontAwesome;
         position: absolute;
         left: 6px;
+        font-family: FontAwesome;
         font-size: $font-6;
       }
     }
@@ -56,7 +56,7 @@
         padding-bottom: 10px;
       }
       .footer__block-last{
-        border-bottom: none!important;
+        border-bottom: none;
       }
     }
   }
@@ -64,9 +64,9 @@
   &__extend {
     padding: 25px 0;
     border-top: 1px solid $color-line-footer;
+    color: $color-word-footer;
     font-family: $font-primary;
     font-size: $font-12;
-    color: $color-word-footer;
     p {
       line-height: 25px;
     }

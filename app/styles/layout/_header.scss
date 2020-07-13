@@ -320,6 +320,7 @@
 
       .product__list {
         position: absolute;
+        z-index: 1;
         top: 78px;
         right: -15px;
         display: none;
