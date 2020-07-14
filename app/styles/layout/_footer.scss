@@ -1,6 +1,7 @@
 .footer {
   padding-top: 54px;
   background-color: $color-black-footer;
+
   &__block {
     &-title {
       font-size: $font-18;
@@ -9,18 +10,24 @@
       color: $color-title-footer;
       white-space: nowrap;
     }
+
     .footer{
       &__list {
         margin: 20px 0 40px 0;
         line-height: 30px;
+
         li {
           a {
             color: $color-word-footer;
             font-family: $font-primary;
             font-size: $font-14;
             text-decoration: none;
+
+            &:hover {
+              color: $color-green;
+              transition: all 0.3s;
+            }
           }
-          
         }
         a:hover {
           color: $color-green !important;
@@ -36,7 +43,8 @@
       &__address {
         &-item {
           display: flex;
-          font-weight: 600;
+          font-weight: $font-w6;
+          
           a {
             margin-left: 5px;
           }
@@ -59,7 +67,9 @@
       &__policy {
         &-item {
           position: relative;
-          a:hover::before {
+        }
+        .item__policy-link{
+          &:hover::before {
             content: "";
             position: absolute;
             top: 14px;
@@ -68,7 +78,7 @@
             height: 4px;
             background-color: #789629;
           }
-          a:hover {
+          &:hover {
             margin-left: 10px;
             @media (min-width: $xl) {
               white-space: nowrap;
@@ -85,12 +95,15 @@
     color: $color-word-footer;
     font-family: $font-primary;
     font-size: $font-12;
-    p {
+
+    &-text {
       line-height: 25px;
+      font-weight: $font-w6;
     }
     &-image {
       text-align: end;
-      @media only screen and (max-width: 768px) {
+  
+      @media (max-width: $md) {
         text-align: start;
         padding-top: 10px;
       }

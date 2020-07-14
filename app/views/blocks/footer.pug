@@ -9,23 +9,23 @@ include ../blocks/data_footer
           ul.footer__list.footer__address
             li.footer__address-item
               .list__item-address 
-                img(src="/images/map.png" alt="map")
+                img(src="/images/map.svg" alt="map")
               a(href="#").address__item-add Tầng 4, Tòa nhà Hanoi Group  Số 442 Đội Cấn, P.Cống Vị, Q. Ba Đình, Hà Nội
             li.footer__address-item
               div
-                img(src="/images/phone.png" alt="phone")
+                img(src="/images/phone.svg" alt="phone")
               a(href="#") (04) 6674 2332 
               span.space-line -
               div
-                img(src="/images/fax.png" alt="fax")
+                img(src="/images/fax.svg" alt="fax")
               a(href="#")  (04) 3786 8904
             li.footer__address-item
                 div
-                  img(src="/images/phone.png" alt="phone")
+                  img(src="/images/phone.svg" alt="phone")
                 a(href="#") (08) 6680 9686  
                 span.space
                 div
-                  img(src="/images/mail.png" alt="email")
+                  img(src="/images/email.svg" alt="email")
                 a(href="#").address__item-email Support@bizweb.vn
       each footer in footers
         if footer.last
@@ -34,22 +34,22 @@ include ../blocks/data_footer
               p.footer__block-title= footer.name
                 ul.footer__block-policy.footer__block-last
                   each item in footer.subfooter
-                    li
-                      a(href="#")= item
+                    li.footer__policy-item
+                      a(href="#").item__policy-link= item
         else
           .col-xs-12.col-sm-12.col-md-12.col-lg-2
             .footer__block
               p.footer__block-title= footer.name
                 ul.footer__block-policy
                   each item in footer.subfooter
-                    li
-                      a(href="#")= item
+                    li.footer__policy-item
+                      a(href="#").item__policy-link= item
   .footer__extend
     .container
       .row
         .col-xs-12.col-sm-12.col-md-8.col-lg-8
           .footer__extend-copy
-            p &copy; Copyright 2008-2014 DKT Technology JSC
+            p.footer__extend-text &copy; Copyright 2008-2014 DKT Technology JSC
         .col-xs-12.col-sm-12.col-md-4.col-lg-4
           .footer__extend-image
             img(src="/images/footer_extend.png" alt="fax")
