@@ -267,6 +267,21 @@
               margin-right: 10px;
             }
           }
+          @media (max-width: $lg) {
+            position: relative;
+          }
+          .list__item:not(:last-child) {
+            margin-right: 36px;
+
+            @media (max-width: $xl) {
+              margin-right: 10px;
+            }
+          }
+        }
+        @media (min-width: $lg) {
+          display: flex !important;
+          justify-content: flex-start;
+          margin-right: 0px;
         }
         @media (min-width: $lg) {
           display: flex !important;
