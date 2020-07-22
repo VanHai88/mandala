@@ -5,6 +5,7 @@ $color-secondary: #39c0ff;
 
 $color-white: #fff;
 $color-black: #000;
+$color-red: #FF0000;
 
 $color-grey-light-1: #d7d9e1;
 $color-grey-light-2: #e9ecf3;
@@ -16,15 +17,30 @@ $color-boder-header: #e7e7e7;
 
 $color-backgroud-header: #f4f4f475;
 $color-light-black: #f4f4f4;
+$color-black-2: #c2c2c2;
+$color-black-3: #f1f1f1;
+$color-black-4: #737373;
+$color-black-5: #cbd4b3;
+$color-black-6: #c1c1c1;
+$color-black-7: #818181;
+$color-black-8: #b4b4b4;
+$color-black-9: #e8e8e8;
+$color-black-10: #4b4b4b;
+$color-black-11: #dadada;
+$color-black-12: #e6e6e6;
 $color-backgroud-mobile: #262626;
 $color-menu: #1a1a1a;
 $color-green: #789629;
+<<<<<<< HEAD
 $color-menu-item: #737373;
 $color-black-footer: #050505;
 $color-title-footer: #d1d1d1;
 $color-word-footer: #494949;
 $color-line-footer: #131313;
+=======
+>>>>>>> e760749... finish home page
 $color-menu-sub: #818181;
+$color-brown: #6c3c33;
 
 $font-s6: 6px;
 $font-s7: 7px;
@@ -41,6 +57,25 @@ $font-w7: 700;
 
 $box-shadow-1: 0 1rem 4rem rgba($color-black, 0.3);
 
+<<<<<<< HEAD
+=======
+// FONT SITE
+$font-s12: 12px;
+$font-s13: 13px;
+$font-s14: 14px;
+$font-s15: 15px;
+$font-s16: 16px;
+$font-s18: 18px;
+$font-s20: 20px;
+$font-s32: 32px;
+$font-s34: 34px;
+$font-s45: 45px;
+
+// FONT WEIGHT
+$font-w1: 100;
+$font-w6: 600;
+
+>>>>>>> e760749... finish home page
 // Z-INDEXES
 $z-index0: -10;
 $z-index1: -1;
@@ -55,14 +90,25 @@ $z-index9: 900;
 
 // FONTS
 $font-primary: "Roboto", sans-serif;
+<<<<<<< HEAD
 $font-OpenSans: "Open Sans", sans-serif;
 $font-UTMViceroyJF: "UTM ViceroyJF";
 $font-lobster: "Lobster", sans-serif;
+=======
+$Open-Sans: 'Open Sans', sans-serif;
+$UTM-ViceroyJF: "UTM ViceroyJF";
+>>>>>>> e760749... finish home page
 
 // SCREEN
 $iphone5: 320px;
 $iphone8-plus: 414px;
+<<<<<<< HEAD
 $mobile: 575px;
+=======
+$sm: 575px;
+>>>>>>> e760749... finish home page
 $md: 768px;
 $tablet: 991px;
 $xl: 1200px;
+$mobile: 575px;
+$tablet: 992px;
