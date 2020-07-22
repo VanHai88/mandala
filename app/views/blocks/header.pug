@@ -14,9 +14,9 @@ include ../blocks/data_header
           each list in menus
             li.list__item
               if list.submenu
-                a.list__item-link(href='#')= list.name
+                a.list__item-link.item-link-control(href='#')= list.name
                   i.fas.fa-chevron-down.icon-down
-                .nav__dropdown
+                .nav__dropdown.nav__dropdown-control
                   .arrow__up
                   .row
                     each sublist in list.submenu
@@ -30,9 +30,9 @@ include ../blocks/data_header
                 a.list__item-link(href=list.link)= list.name
 
       .header__icon
-        button.header__icon-cart
+        button.header__icon-cart.cart-control
           i.fas.fa-shopping-cart
-          .product__list
+          .product__list.product__list-control
             .arrow__up
             each product in products
               .product__list-item

@@ -100,6 +100,9 @@
       .nav__list {
         .list__item {
           .nav__dropdown {
+            display: none;
+            animation: moveInShow 1s ease-out;
+
             @media (min-width: $md) {
               padding: 0 0px 10px 20px;
             }
@@ -109,6 +112,7 @@
               border-bottom: 1px solid $color-boder-header;
               padding: 35px 0 15px 0;
               margin-bottom: 20px;
+              background-color: $color-white;
               font-size: 14px;
 
               @media (max-width: $md) {
@@ -159,7 +163,6 @@
               z-index: 1;
               top: 78px;
               left: 26%;
-              display: none;
               width: 700px;
               border: 2px solid $color-green;
               padding: 0 0px 26px 35px;
@@ -252,9 +255,7 @@
           }
           .list__item-link.item-active,
           .list__item-link:hover {
-            @media (min-width: $lg) {
               color: $color-green;
-            }
           }
           @media (max-width: $lg) {
             position: relative;
@@ -311,6 +312,7 @@
         padding: 10px;
         background-color: $color-white;
         text-align: left;
+        animation: moveInShow 1s ease-out;
 
         .arrow__up {
           position: absolute;
@@ -424,5 +426,19 @@
     @media (min-width: $iphone8-plus) {
       right: 30px;
     }
+  }
+}
+
+@keyframes moveInShow{
+  0%{
+      opacity: 0;
+      transform: translateY(-100px);
+  }
+  80%{
+      transform: translateY(10px);
+  }
+  100%{
+      opacity: 10;
+      transform: translate(0, 0);
   }
 }
