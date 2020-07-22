@@ -1,7 +1,7 @@
 // Slider Share Product
 
 $(document).ready(function () {
-  $(".slider__feedback").slick({
+  $(".slider__feedback-control").slick({
     accessibility: true,
     infinite: true,
     arrows: false,
@@ -11,7 +11,9 @@ $(document).ready(function () {
   });
 });
 
-$(".product__show").slick({
+// Slider Show Product
+
+$(".product__show-control").slick({
   slidesToShow: 6,
   infinite: true,
   accessibility: false,
@@ -42,8 +44,8 @@ $(".slick-prev").click(function () {
   $(".product__show-item").each(function (item) {
     $(this).removeClass("item__active");
   });
-  $(".product__show .slick-active:first").addClass("item__active");
-  $(".product__show .slick-active:last").addClass("item__active");
+  $(".product__show-control .slick-active:first").addClass("item__active");
+  $(".product__show-control .slick-active:last").addClass("item__active");
 });
 
 $(".slick-next").click(function () {
@@ -51,22 +53,23 @@ $(".slick-next").click(function () {
     $(this).removeClass("item__active");
   });
 
-  $(".product__show .slick-active:first").addClass("item__active");
-  $(".product__show .slick-active:last").addClass("item__active");
+  $(".product__show-control .slick-active:first").addClass("item__active");
+  $(".product__show-control .slick-active:last").addClass("item__active");
 });
 
 $(".slick-active:first").addClass("item__active");
 $(".slick-active:last").addClass("item__active");
 
-// ajdust margins when page size changes (ie rotate mobile device)
 $(window).resize(function () {
   var w = $("body").width();
   w < 992
-    ? $(".product__show").addClass("container")
-    : $(".product__show").removeClass("container");
+    ? $(".product__show-control").addClass("container")
+    : $(".product__show-control").removeClass("container");
 });
 
-$(".contact__list").slick({
+// Slider contact
+
+$(".contact__list-control").slick({
   slidesToShow: 6,
   infinite: true,
   responsive: [

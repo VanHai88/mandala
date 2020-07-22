@@ -4,68 +4,68 @@ include ../blocks/data_home_page
 .banner
   .container
     .banner__wrapper
-      .col-xs-5.col-sm-5.col-md-5.col-lg-5
+      .col-sm-5
         .banner__wrapper-product
-          img(src="images/layer_product_new.png" alt="layer product").banner__product-img
+          img.banner__product-img(src="images/layer_product_new.png" alt="layer product")
           .product__introduction
             p.product__introduction-name GreenVera
             p.product__introduction-info Sản phẩm tinh dầu dưỡng da mới nhất của mandala
             p.product__introduction-price GIÁ CHỈ 750.000
               span đ
-            a(href="#").product__introduction-buy Mua hàng 
-      .col-xs-7.col-sm-7.col-md-7.col-lg-7
+            a.product__introduction-buy(href="#") Mua hàng 
+      .col-sm-7
         .layer__block-img
-          img(src="images/layer.png" alt="layer").layer-img
+          img.layer-img(src="images/layer.png" alt="layer")
 
 <!-- Block Sale-->
 section.section__sale
   .container
     .sale__wrapper
       .row
-        .col-xs-12.col-sm-4.col-md-4.col-lg-4
+        .col-xs-12.col-sm-4
           .sale__wrapper-block
-            img(src="images/plane.svg" alt="plane_icon").sale-img
+            img.sale-img(src="images/plane.svg" alt="plane_icon")
             p.sale-text Miễn phí vận chuyển trên toàn quốc
-        .col-xs-12.col-sm-4.col-md-4.col-lg-4
+        .col-xs-12.col-sm-4
           .sale__wrapper-block.sale__wrapper-center
-            img(src="images/gift.svg" alt="gift_icon").sale-img
+            img.sale-img(src="images/gift.svg" alt="gift_icon")
             p.sale-text Nhận ngay quà tặng trị giá 350.000đ
-        .col-xs-12.col-sm-4.col-md-4.col-lg-4
+        .col-xs-12.col-sm-4
           .sale__wrapper-block
-            img(src="images/star.svg" alt="star_icon").sale-img
+            img.sale-img(src="images/star.svg" alt="star_icon")
             p.sale-text Giảm 30% cho đơn hàng trên 5.000.000đ
 
 <!-- Block Product Ads-->
 
-section.section__product__ads
+section.section__product-ads
   .container
     .product__ads
       .product__ads-1
         .item__box-1
           .item__sub-1
-            img(src="images/item-mother-1.png" alt="item_1").img-fluid
+            img.img-fluid(src="images/item-mother-1.png" alt="item_1")
           .item__sub-2
-            img(src="images/item-mother-2.png" alt="item_2").img-fluid
+            img.img-fluid(src="images/item-mother-2.png" alt="item_2")
         .item__box-2
-          img(src="images/item_2--right--img.jpg" alt="item_3").img-fluid
+          img.img-fluid(src="images/item_2--right--img.jpg" alt="item_3")
       .product__ads-2        
         .item__box-1
           .item__sub-1
-            img(src="images/item-mother-3.png" alt="item_4").img-fluid
+            img.img-fluid(src="images/item-mother-3.png" alt="item_4")
           .item__sub-2
-            img(src="images/item-mother-4.png" alt="item_5").img-fluid
+            img.img-fluid(src="images/item-mother-4.png" alt="item_5")
         .item__box-2
-          img(src="images/Item_3--left--img.jpg" alt="item_6").img-fluid
+          img.img-fluid(src="images/Item_3--left--img.jpg" alt="item_6")
 
 <!-- Block Share Products-->
 section.section__feedback
   .container
-    .slider__feedback
+    .slider__feedback.slider__feedback-control
       each author in authors
         .slider__feedback-item
           .feedback__item-content
             .row
-              .col-xs-12.col-sm-12.col-md-12.col-lg-8
+              .col-sm-12.col-lg-8
                 p.content-text= author.comment
           .feedback__item-infor
             .infor-avatar
@@ -74,16 +74,16 @@ section.section__feedback
               h6= author.name
                 span.infor-name= author.role
 
-section.section__bestseller___products
+section.section__bestseller-products
   .bestseller__products
     .container
       ul.bestseller__products-list
         li.list__item
-          a(href="#").list__item-link Sản phẩm mới
+          a.list__item-link(href="#") Sản phẩm mới
         li.list__item
-          a(href="#").list__item-link.active Sản phẩm bán chạy
+          a.list__item-link.active(href="#") Sản phẩm bán chạy
         li.list__item
-          a(href="#").list__item-link Sản phẩm đặc biệt
+          a.list__item-link(href="#") Sản phẩm đặc biệt
       .line
         span.line-before
         span.line-center //////////////
@@ -101,7 +101,7 @@ section.section__bestseller___products
           li.menu-list--item Trang sức
           li.menu-list--item Quà tặng
 
-    .product__show
+    .product__show.product__show-control
       each product in products
         .product__show-item
           .item__img
@@ -123,10 +123,10 @@ section.section__bestseller___products
             button.item__btn-icon.item__btn-reload 
               i.fas.fa-sync-alt
 
-section.section__additional__information
+section.section__additional-information
   .container
     .information__contact
-      .contact__list
+      .contact__list.contact__list-control
         .contact__list-item
           .item-icon
             img(src="images/facebook.svg" alt="facebook")
@@ -160,7 +160,7 @@ section.section__additional__information
 
     .information__details
       .row
-        .col-xs-12.col-sm-6.col-md-6.col-lg-4
+        .col-xs-12.col-sm-6.col-lg-4
           .destail__about__us
             .destail__block
               h2.destail-title Về chúng tôi
@@ -174,7 +174,7 @@ section.section__additional__information
               .destail__content-introduce
                 p Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt.Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt.Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt.
                 a(href="#").introduce-link Xem thêm
-        .col-xs-12.col-sm-6.col-md-6.col-lg-4
+        .col-xs-12.col-sm-6.col-lg-4
           .destail__blog
             .destail__block
               h2.destail-title blog
@@ -183,15 +183,15 @@ section.section__additional__information
             img(src="/images/blog-img.png" alt="blog")
           p.destail__blog-title Review son kem bourjois velvet
           p.destail__blog-introduce Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hăm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt.
-          p.destail__blog-author Bởi NamTran (27/05/2015)
+          a.destail__blog-author(href="#") Bởi NamTran (27/05/2015)
           .destail__blog-detail
-            a(href="#").introduce-link Đọc thêm
+            a.introduce-link(href="#") Đọc thêm
               i.fas.fa-angle-right
-            p.comment-index 23 Bình luận
+            a.comment-index(href="#") 23 Bình luận
 
-        .col-xs-12.col-sm-12.col-md-12.col-lg-4    
+        .col-sm-12.col-lg-4    
           .row
-            .col-xs-12.col-sm-6.col-md-6.col-lg-12
+            .col-sm-6.col-lg-12
               .destail__send-email
                 .destail__block
                   h2.destail-title gửi email cho chúng tôi
@@ -202,7 +202,7 @@ section.section__additional__information
                     input.email-input(type='text' placeholder='Email của bạn')
                     p.email-text Gửi email để nhận những ưu đãi mới nhất
                     button.email-btn(type='submit') Gửi
-            .col-xs-12.col-sm-6.col-md-6.col-lg-12
+            .col-sm-6.col-lg-12
               .destail__product-tag
                 .destail__block
                   h2.destail-title tag sản phẩm
