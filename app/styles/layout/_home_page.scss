@@ -224,8 +224,39 @@
       }
 
       .item__box-2 {
+        position: relative;
+        cursor: pointer;
+
+        &:hover .box-2--btn{
+          background-color: #ffffff9c;
+          transition: all .5s;
+        }
+
         @media (max-width: $mobile) {
           margin: 26px 0;
+        }
+      }
+
+      .box-2--btn{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        padding: 35px 40px;
+        border-radius: 105px;
+        border: none;
+        background-color: #000000a3;
+        transform: translate(-50%, -50%);
+
+        &:focus{
+          outline: none;
+        }
+
+        .icon__play {
+          width: 0;
+          height: 0;
+          border-top: 18px solid transparent;
+          border-bottom: 18px solid transparent;
+          border-left: 25px solid #0e0e0e;
         }
       }
 
@@ -278,6 +309,7 @@
     background-image: url(../../images/feedback--background.png);
     background-repeat: no-repeat;
     background-position: 536px;
+    cursor: pointer;
 
     &:focus {
       outline: none;
@@ -450,7 +482,7 @@
   }
 
   .slick-dots li button:before {
-    width: 6px;
+    width: 7px;
     height: 7px;
     background-color: $color-black;
     line-height: 7px;
