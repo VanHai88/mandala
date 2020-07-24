@@ -3,14 +3,14 @@ include ../blocks/data_footer
 .footer
   .container
     .row
-      .col-xs-12.col-sm-12.col-md-12.col-lg-4
+      .col-sm-12.col-lg-4
         .footer__block
           p.footer__block-title LIÊN HỆ VỚI CHÚNG TÔI
           ul.footer__list.footer__address
             li.footer__address-item
               .list__item-address 
                 img(src="/images/map.svg" alt="map")
-              a(href="#").address__item-add Tầng 4, Tòa nhà Hanoi Group  Số 442 Đội Cấn, P.Cống Vị, Q. Ba Đình, Hà Nội
+              a.address__item-add(href="#") Tầng 4, Tòa nhà Hanoi Group  Số 442 Đội Cấn, P.Cống Vị, Q. Ba Đình, Hà Nội
             li.footer__address-item
               div
                 img(src="/images/phone.svg" alt="phone")
@@ -26,30 +26,30 @@ include ../blocks/data_footer
                 span.space
                 div
                   img(src="/images/email.svg" alt="email")
-                a(href="#").address__item-email Support@bizweb.vn
+                a.address__item-email(href="#") Support@bizweb.vn
       each footer in footers
         if footer.last
-          .col-xs-12.col-sm-12.col-md-12.col-lg-2
+          .col-sm-12.col-lg-2
             .footer__block
               p.footer__block-title= footer.name
-                ul.footer__block-policy.footer__block-last
+                ul.footer__list.footer__policy.footer__last
                   each item in footer.subfooter
                     li.footer__policy-item
-                      a(href="#").item__policy-link= item
+                      a.item__policy-link(href="#")= item
         else
-          .col-xs-12.col-sm-12.col-md-12.col-lg-2
+          .col-sm-12.col-lg-2
             .footer__block
               p.footer__block-title= footer.name
-                ul.footer__block-policy
+                ul.footer__list.footer__policy
                   each item in footer.subfooter
                     li.footer__policy-item
-                      a(href="#").item__policy-link= item
+                      a.item__policy-link(href="#")= item
   .footer__extend
     .container
       .row
-        .col-xs-12.col-sm-12.col-md-8.col-lg-8
+        .col-sm-12.col-md-8
           .footer__extend-copy
             p.footer__extend-text &copy; Copyright 2008-2014 DKT Technology JSC
-        .col-xs-12.col-sm-12.col-md-4.col-lg-4
+        .col-sm-12.col-md-4
           .footer__extend-image
-            img(src="/images/footer_extend.png" alt="fax")
+            img(src="/images/footer_extend.png" alt="pay")

@@ -1,26 +1,33 @@
 .footer {
-  padding-top: 54px;
+  padding-top: 42px;
   background-color: $color-black-footer;
 
   &__block {
     &-title {
-      font-size: $font-18;
-      font-family: $Open-Sans; 
-      font-weight: 600;
       color: $color-title-footer;
+      font-family: $font-OpenSans;
+      font-size: $font-s18;
+      font-weight: $font-w6;
+
       white-space: nowrap;
     }
 
-    .footer{
+    .footer {
       &__list {
-        margin: 20px 0 40px 0;
+        margin-top: 23px;
+        margin-bottom: 25px;
         line-height: 30px;
+
+        @media (max-width: $tablet) {
+          padding-bottom: 17px;
+          border-bottom: 1px solid $color-line-footer;
+        }
 
         li {
           a {
             color: $color-word-footer;
             font-family: $font-primary;
-            font-size: $font-14;
+            font-size: $font-s14;
             text-decoration: none;
 
             &:hover {
@@ -29,37 +36,38 @@
             }
           }
         }
-        a:hover {
-          color: $color-green !important;
-          transition: all .3s;
-        }
       }
+
       &__last {
-        @media (max-width: $lg) {
+        @media (max-width: $tablet) {
           border-bottom: none;
-          margin-bottom: 44px;
+          margin-bottom: 25px;
         }
       }
       &__address {
         &-item {
           display: flex;
           font-weight: $font-w6;
-          
+
           a {
             margin-left: 5px;
           }
-          .space-line {
-            font-size: 23px;
-            margin: 0px 5px;
-            line-height: 24px;
-          }
+
           .space {
             margin: 0 10px;
+
+            &-line {
+              margin: 0px 5px;
+              font-size: $font-s23;
+              line-height: 24px;
+            }
           }
-          .address__item-email{
+
+          .address__item-email {
             font-style: italic;
           }
-          .address__item-add{
+
+          .address__item-add {
             margin-left: 12px;
           }
         }
@@ -68,15 +76,17 @@
         &-item {
           position: relative;
         }
-        .item__policy-link{
+
+        .item__policy-link {
           &:hover::before {
             content: "";
             position: absolute;
             top: 14px;
             left: 0px;
             width: 4px;
+
             height: 4px;
-            background-color: #789629;
+            background-color: $color-green;
           }
           &:hover {
             margin-left: 10px;
@@ -89,20 +99,25 @@
     }
   }
 
+  .footer__block {
+    margin-top: 14px;
+  }
+
   &__extend {
-    padding: 25px 0;
+    padding: 20px 0;
     border-top: 1px solid $color-line-footer;
     color: $color-word-footer;
     font-family: $font-primary;
-    font-size: $font-12;
+
+    font-size: $font-s12;
 
     &-text {
-      line-height: 25px;
       font-weight: $font-w6;
+      line-height: 25px;
     }
     &-image {
       text-align: end;
-  
+
       @media (max-width: $md) {
         text-align: start;
         padding-top: 10px;

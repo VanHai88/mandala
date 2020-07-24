@@ -22,10 +22,14 @@ $(".cart-control").click(function (e) {
     isCheckCart = !isCheckCart;
   }
   isCheckDropdown = true;
-  
+
+  if (w < 992) {
+    $(".nav__list").css("display", "none");
+    $(".nav__mobile a").removeClass("active");
+  }
+
   $(".nav__dropdown-control").css("display", "none");
-  $(".nav__list").css("display", "none");
-  $(".nav__mobile a").removeClass("active");
+
   e.stopPropagation();
 });
 
@@ -57,3 +61,13 @@ $(".nav__toggle").on("click", function () {
   this.classList.toggle("active");
 });
 
+var w;
+$(window).resize(function () {
+  w = $("body").width();
+  if (w > 992) {
+    $(".nav__list").css("display", "flex");
+  } else {
+    $(".nav__list").css("display", "none");
+    $(".nav__toggle").removeClass("active");
+  }
+});
