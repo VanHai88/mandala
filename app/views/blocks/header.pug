@@ -14,15 +14,9 @@ include ../blocks/data_header
           each list in menus
             li.list__item
               if list.submenu
-<<<<<<< HEAD
                 a.list__item-link.item-link-control(href='#')= list.name
                   i.fas.fa-chevron-down.icon-down
                 .nav__dropdown.nav__dropdown-control
-=======
-                a.list__item-link(href='#')= list.name
-                  i.fas.fa-chevron-down.icon-down
-                .nav__dropdown
->>>>>>> e62fd504f27d3fa01ec26fb1cbceabf11e99bbaa
                   .arrow__up
                   .row
                     each sublist in list.submenu
